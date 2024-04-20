@@ -1,5 +1,5 @@
 img{
-    width: 70%;
+    width: 300px;
     height: auto;
     margin: 16px auto;
     border-radius: 16px;
@@ -47,14 +47,16 @@ ol li{
 }
 
 .Imagecard{
+    order:1;
     text-align: center;
-    margin: 0 24px;
+    margin: 24px;
     background-color: bisque;
     padding: 16px 16px;
     border-radius: 30px;
 }
 
 .Ingredients{
+    order: 2;
     background-color: bisque;
     margin: 24px 24px;
     border-radius: 30px;
@@ -62,8 +64,17 @@ ol li{
 }
 
 .Steps{
+    order: 3;
     background-color: bisque;
     margin: 24px 24px;
     border-radius: 30px;
     padding: 16px 32px;
+}
+
+.main {
+    display: flex;
+}
+
+.main div{
+    flex: 1;
 }
